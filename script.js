@@ -66,16 +66,15 @@ const projetos = [
     aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de informações e desenvolver conteúdos institucionais com linguagem mais acessível."
   },
   {
-    exemplo: true,
-    titulo: "Peça institucional (exemplo)",
-    categoria: "Comunicação Institucional",
-    imagem: "",
-    descricao: "Espaço para um material de comunicação institucional.",
-    objetivo: "Descreva o objetivo.",
-    participacao: "Descreva sua participação.",
-    ferramentas: "Ex.: Canva",
-    resultado: "Descreva o resultado.",
-    aprendizados: "Descreva o que aprendeu."
+    titulo: "Conteúdo Político",
+    categoria: "Design",
+    imagem: "assets/5 Parques para conhecer em Curitiba",
+    descricao: "Carrossel com sugestões de parques de Curitiba, reunindo informações sobre os espaços, localização e características de cada lugar.",
+    objetivo: "Produzir um conteúdo informativo e de utilidade pública sobre opções de lazer e espaços da cidade.",
+    participacao: "Pesquisa e organização das informações, seleção de imagens, criação dos textos e desenvolvimento da composição visual.",
+    ferramentas: "Canva",
+    resultado: "Guia visual em formato de carrossel para as redes sociais.",
+    aprendizados: "Desenvolvi habilidades de pesquisa, síntese de informações, curadoria de imagens e criação de conteúdos informativos."
   },
   {
     exemplo: true,
