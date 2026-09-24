@@ -164,3 +164,41 @@ body.modal-aberto { overflow: hidden; }
   .card-img img, .modal-nav button { transition: none; }
   .card:hover .card-img img { transform: none; }
 }
+
+/* ===== APARECER COM SUAVIDADE (imagens e janela) ===== */
+@keyframes brilho { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes janela-sobe { from { opacity: 0; transform: translateY(22px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes img-entra { from { opacity: 0; transform: scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes img-dir { from { opacity: 0; transform: translateX(32px); } to { opacity: 1; transform: none; } }
+@keyframes img-esq { from { opacity: 0; transform: translateX(-32px); } to { opacity: 1; transform: none; } }
+@keyframes zoom-entra { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
+
+/* fundo suave enquanto a imagem carrega */
+.card-img.carregando, .modal-palco.carregando {
+  background: linear-gradient(100deg, var(--bege) 30%, #f4ebde 50%, var(--bege) 70%);
+  background-size: 200% 100%;
+  animation: brilho 1.6s linear infinite;
+}
+.modal-palco.carregando { min-height: 320px; }
+
+/* imagens dos cards */
+.card-img img { opacity: 0; transition: transform .4s ease, opacity .7s ease; }
+.card-img img.pronta { opacity: 1; }
+
+/* imagem da galeria */
+.modal-palco img { opacity: 0; }
+.modal-palco img.pronta { opacity: 1; animation: img-entra .6s ease both; }
+.modal-palco img.pronta.vem-direita { animation-name: img-dir; }
+.modal-palco img.pronta.vem-esquerda { animation-name: img-esq; }
+
+/* janela e ampliação */
+.modal.aberto .modal-janela { animation: janela-sobe .4s cubic-bezier(.2, .7, .2, 1) both; }
+.modal.aberto .modal-info { animation: img-entra .6s .15s ease both; }
+.zoom.aberto { animation: modal-entra .3s ease; }
+.zoom.aberto img { animation: zoom-entra .4s ease both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .card-img img, .modal-palco img { opacity: 1 !important; animation: none !important; transition: none; }
+  .card-img.carregando, .modal-palco.carregando { animation: none; }
+  .modal.aberto .modal-janela, .modal.aberto .modal-info, .zoom.aberto, .zoom.aberto img { animation: none; }
+}
