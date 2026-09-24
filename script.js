@@ -11,9 +11,11 @@
    ===================================================== */
 const projetos = [
   {
-    titulo: "Comunicação Política",
+    exemplo: true,
+    titulo: "Identidade visual (exemplo)",
     categoria: "Design",
-    imagens:["assets/Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png",
+    imagens: [
+  "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png",
   "assets/gato 1.png",
   "assets/gato 2.png",
   "assets/gato 3.png",
@@ -22,13 +24,13 @@ const projetos = [
   "assets/gato 6.png",
   "assets/gato 7.png",
   "assets/gato 8.png"
-       ],
-    descricao: "Conjunto de peças para redes sociais, utilizando diferentes formatos visuais para apresentar o trabalho do gabinete, pautas públicas e conteúdos informativos.",
-    objetivo: "Criar conteúdos acessíveis e visualmente atrativos para comunicar temas do mandato nas redes sociais.",
-    participacao: "riação da estrutura visual, organização das informações, definição de textos e adaptação do conteúdo para o formato das redes sociais.",
-    ferramentas: "Canva",
-    resultado: "Peças prontas para publicação em formatos de carrossel e conteúdo vertical.",
-    aprendizados: "Aprimorei a criação de conteúdos para redes sociais, hierarquia de informações, composição visual e adaptação de linguagem para diferentes público"
+],
+    descricao: "Espaço para um projeto de design criado por você.",
+    objetivo: "Descreva o que o projeto queria alcançar.",
+    participacao: "Descreva o que você fez.",
+    ferramentas: "Ex.: Canva, Photoshop, Figma",
+    resultado: "Descreva o resultado.",
+    aprendizados: "Descreva o que aprendeu."
   },
   {
     exemplo: true,
@@ -147,6 +149,21 @@ function criarCard(p) {
       "<p>" + p.descricao + "</p>" +
       '<span class="card-ver">Ver projeto</span>' +
     "</div>";
+  const cardImg = card.querySelector(".card-img img");
+  if (cardImg) {
+    const caixa = cardImg.parentNode;
+    caixa.classList.add("carregando");
+    let feito = false;
+    const pronta = function () {
+      if (feito) return;
+      feito = true;
+      caixa.classList.remove("carregando");
+      cardImg.classList.add("pronta");
+    };
+    cardImg.addEventListener("load", pronta);
+    cardImg.addEventListener("error", pronta);
+    if (cardImg.complete) pronta();
+  }
   card.addEventListener("click", function () { abrirProjeto(p, card); });
   card.addEventListener("keydown", function (e) {
     if (e.key === "Enter" || e.key === " ") { e.preventDefault(); abrirProjeto(p, card); }
@@ -217,17 +234,35 @@ const campos = [
 ];
 let projetoAtual = null, imagensAtuais = [], indice = 0, gatilho = null;
 
-function desenhar() {
+function desenhar(direcao) {
   const p = projetoAtual;
   palco.innerHTML = "";
   if (imagensAtuais.length) {
     const img = document.createElement("img");
-    img.src = imagensAtuais[indice];
     img.alt = p.titulo + " — imagem " + (indice + 1) + " de " + imagensAtuais.length;
     img.title = "Clique para ampliar";
     img.addEventListener("click", abrirZoom);
+    palco.classList.add("carregando");
+    let feito = false;
+    const pronta = function () {
+      if (feito) return;
+      feito = true;
+      palco.classList.remove("carregando");
+      if (direcao) img.classList.add(direcao > 0 ? "vem-direita" : "vem-esquerda");
+      img.classList.add("pronta");
+    };
+    img.addEventListener("load", pronta);
+    img.addEventListener("error", pronta);
+    img.src = imagensAtuais[indice];
     palco.appendChild(img);
+    if (img.complete) pronta();
+    /* já carrega as vizinhas para a troca ficar suave */
+    if (imagensAtuais.length > 1) {
+      new Image().src = imagensAtuais[(indice + 1) % imagensAtuais.length];
+      new Image().src = imagensAtuais[(indice - 1 + imagensAtuais.length) % imagensAtuais.length];
+    }
   } else {
+    palco.classList.remove("carregando");
     const vazio = document.createElement("div");
     vazio.className = "modal-vazio";
     vazio.textContent = "Imagem do projeto";
@@ -237,10 +272,10 @@ function desenhar() {
   contEl.textContent = (indice + 1) + "/" + imagensAtuais.length;
 }
 
-function irPara(n) {
+function irPara(n, direcao) {
   if (imagensAtuais.length < 2) return;
   indice = (n + imagensAtuais.length) % imagensAtuais.length;
-  desenhar();
+  desenhar(direcao);
   if (zoom.classList.contains("aberto")) zoomImg.src = imagensAtuais[indice];
 }
 
@@ -293,8 +328,8 @@ function fecharZoom() {
 
 modal.querySelector(".modal-fechar").addEventListener("click", fecharProjeto);
 modal.addEventListener("click", function (e) { if (e.target === modal) fecharProjeto(); });
-modal.querySelector(".ant").addEventListener("click", function () { irPara(indice - 1); });
-modal.querySelector(".prox").addEventListener("click", function () { irPara(indice + 1); });
+modal.querySelector(".ant").addEventListener("click", function () { irPara(indice - 1, -1); });
+modal.querySelector(".prox").addEventListener("click", function () { irPara(indice + 1, 1); });
 zoom.addEventListener("click", fecharZoom);
 
 document.addEventListener("keydown", function (e) {
@@ -302,9 +337,9 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     if (zoom.classList.contains("aberto")) fecharZoom(); else fecharProjeto();
   } else if (e.key === "ArrowLeft") {
-    irPara(indice - 1);
+    irPara(indice - 1, -1);
   } else if (e.key === "ArrowRight") {
-    irPara(indice + 1);
+    irPara(indice + 1, 1);
   } else if (e.key === "Tab") {
     const area = zoom.classList.contains("aberto") ? zoom : modal;
     const foco = Array.prototype.filter.call(
@@ -326,7 +361,7 @@ function ativarDeslizar(el) {
     if (x0 === null) return;
     const dx = e.changedTouches[0].clientX - x0;
     x0 = null;
-    if (Math.abs(dx) > 50) irPara(dx < 0 ? indice + 1 : indice - 1);
+    if (Math.abs(dx) > 50) irPara(dx < 0 ? indice + 1 : indice - 1, dx < 0 ? 1 : -1);
   }, { passive: true });
 }
 ativarDeslizar(palco);
