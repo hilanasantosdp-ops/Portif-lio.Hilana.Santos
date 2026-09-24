@@ -33,18 +33,6 @@ const projetos = [
   },
   {
     exemplo: true,
-    titulo: "Carrossel sobre o 13 de Maio",
-    categoria: "Design",
-    imagem: "assets/O que não te contaram sobre o 13 de maio_.png",
-    descricao: "Carrossel informativo sobre mulheres negras que tiveram participação na luta abolicionista e na resistência à escravidão no Brasil.",
-    objetivo: "Apresentar informações históricas de forma visual, acessível e educativa.",
-    participacao: "Organização das informações, composição dos cards, seleção e tratamento das imagens e desenvolvimento da identidade visual da peça.",
-    ferramentas: "Canva",
-    resultado: "Carrossel educativo para publicação nas redes sociais.",
-    aprendizados: "Aprimorei a organização de conteúdos históricos e a criação de peças que combinam informação, texto e elementos visuais."
-  },
-  {
-    exemplo: true,
     titulo: "Ensaio fotográfico (exemplo)",
     categoria: "Fotografia",
     imagem: "",
@@ -56,16 +44,26 @@ const projetos = [
     aprendizados: "Descreva o que aprendeu."
   },
   {
-    exemplo: true,
-    titulo: "Projeto de tecnologia (exemplo)",
-    categoria: "Tecnologia",
-    imagem: "",
-    descricao: "Espaço para um site, sistema ou app que você fez.",
-    objetivo: "Descreva o objetivo.",
-    participacao: "Descreva sua participação.",
-    ferramentas: "Ex.: HTML, CSS, JavaScript",
-    resultado: "Descreva o resultado.",
-    aprendizados: "Descreva o que aprendeu."
+    titulo: "Conteúdo Político",
+    categoria: "Design",
+    imagem: "assets/O que não te contaram sobre o 13 de maio_.png",
+    descricao: "Carrossel informativo sobre mulheres negras que tiveram participação na luta abolicionista e na resistência à escravidão no Brasil.",
+    objetivo: "Apresentar informações históricas de forma visual, acessível e educativa.",
+    participacao: "Organização das informações, composição dos cards, seleção e tratamento das imagens e desenvolvimento da identidade visual da peça.",
+    ferramentas: "Canva",
+    resultado: "Carrossel educativo para publicação nas redes sociais.",
+    aprendizados: "Aprimorei a organização de conteúdos históricos e a criação de peças que combinam informação, texto e elementos visuais."
+  },
+  {
+    titulo: "Conteúdo Político",
+    categoria: "Design",
+    imagem: "assets/Coisas que Curitiba deveria ter em 2026.png",
+    descricao: "Carrossel que apresenta, de forma visual e direta, temas relacionados a serviços públicos, transporte, educação, espaços públicos e atendimento à população.",
+    objetivo: "Transformar diferentes pautas públicas em um conteúdo de fácil compreensão para as redes sociais.",
+    participacao: "Desenvolvimento da identidade visual, organização das pautas, criação dos textos e composição dos cards.",
+    ferramentas: "Canva",
+    resultado: "Conteúdo em formato de carrossel, com linguagem visual padronizada e adequada às redes sociais.",
+    aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de informações e desenvolver conteúdos institucionais com linguagem mais acessível."
   },
   {
     exemplo: true,
