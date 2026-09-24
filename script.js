@@ -11,16 +11,15 @@
    ===================================================== */
 const projetos = [
   {
-    exemplo: true,
-    titulo: "Identidade visual (exemplo)",
+    titulo: "Comunicação Política",
     categoria: "Design",
-    imagens: [],
-    descricao: "Espaço para um projeto de design criado por você.",
-    objetivo: "Descreva o que o projeto queria alcançar.",
-    participacao: "Descreva o que você fez.",
-    ferramentas: "Ex.: Canva, Photoshop, Figma",
-    resultado: "Descreva o resultado.",
-    aprendizados: "Descreva o que aprendeu."
+    imagens: ["assets/capa Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png", "assets/slide-2 gato 1.png", "assets/slide-3 gato 2.pgn", "assets/slide-4 gato 3.png","assets/slide-5 gato 4.png", "assets/slide-6 gato 5.png", "assets/slide-7 gato 6.png", "assets/slide-8 gato 7.png", "assets/slide-9 gato 8.png"],
+    descricao: "Conjunto de peças para redes sociais, utilizando diferentes formatos visuais para apresentar o trabalho do gabinete, pautas públicas e conteúdos informativos.",
+    objetivo: "Criar conteúdos acessíveis e visualmente atrativos para comunicar temas do mandato nas redes sociais.",
+    participacao: "riação da estrutura visual, organização das informações, definição de textos e adaptação do conteúdo para o formato das redes sociais.",
+    ferramentas: "Canva",
+    resultado: "Peças prontas para publicação em formatos de carrossel e conteúdo vertical.",
+    aprendizados: "Aprimorei a criação de conteúdos para redes sociais, hierarquia de informações, composição visual e adaptação de linguagem para diferentes público"
   },
   {
     exemplo: true,
