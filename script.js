@@ -11,8 +11,7 @@
    ===================================================== */
 const projetos = [
   {
-    exemplo: true,
-    titulo: "Identidade visual (exemplo)",
+    titulo: "Post para Instagram",
     categoria: "Design",
     imagens: [
   "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png",
@@ -25,12 +24,12 @@ const projetos = [
   "assets/gato 7.png",
   "assets/gato 8.png"
 ],
-    descricao: "Espaço para um projeto de design criado por você.",
-    objetivo: "Descreva o que o projeto queria alcançar.",
-    participacao: "Descreva o que você fez.",
-    ferramentas: "Ex.: Canva, Photoshop, Figma",
-    resultado: "Descreva o resultado.",
-    aprendizados: "Descreva o que aprendeu."
+    descricao: "Conjunto de peças para redes sociais, utilizando diferentes formatos visuais para apresentar o trabalho do gabinete, pautas públicas e conteúdos informativos.",
+    objetivo: "Criar conteúdos acessíveis e visualmente atrativos para comunicar temas do mandato nas redes sociais.",
+   participacao: "Criação da estrutura visual, organização das informações, definição de textos e adaptação do conteúdo para o formato das redes sociais.",
+   ferramentas: "Canva",
+resultado: "Peças prontas para publicação em formatos de carrossel e conteúdo vertical.",
+   aprendizados: "Aprimorei a criação de conteúdos para redes sociais, hierarquia de informações, composição visual e adaptação de linguagem para diferentes públicos"
   },
   {
     exemplo: true,
