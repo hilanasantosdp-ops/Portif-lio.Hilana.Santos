@@ -3,15 +3,18 @@
    Para trocar um exemplo por um projeto real:
    1) apague a linha  exemplo: true,  (ou coloque false)
    2) preencha os textos
-   3) coloque a imagem em assets/ e escreva o caminho em imagem
-      Ex.: imagem: "assets/meu-projeto.jpg"
+   3) coloque as imagens em assets/ e escreva os caminhos em imagens
+      Ex.: imagens: ["assets/capa.jpg", "assets/slide-2.jpg", "assets/slide-3.jpg"]
+      Com uma imagem só funciona igual: imagens: ["assets/capa.jpg"]
+      Ao clicar no projeto, ele abre grande, com galeria e zoom.
+      A primeira imagem da lista é a que aparece no card.
    ===================================================== */
 const projetos = [
   {
     exemplo: true,
     titulo: "Identidade visual (exemplo)",
     categoria: "Design",
-    imagem: "",
+    imagens: [],
     descricao: "Espaço para um projeto de design criado por você.",
     objetivo: "Descreva o que o projeto queria alcançar.",
     participacao: "Descreva o que você fez.",
@@ -23,7 +26,7 @@ const projetos = [
     exemplo: true,
     titulo: "Campanha para redes (exemplo)",
     categoria: "Social Media",
-    imagem: "",
+    imagens: [],
     descricao: "Espaço para um trabalho de social media.",
     objetivo: "Descreva o objetivo.",
     participacao: "Descreva sua participação.",
@@ -33,9 +36,21 @@ const projetos = [
   },
   {
     exemplo: true,
+    titulo: "Texto ou roteiro (exemplo)",
+    categoria: "Comunicação",
+    imagens: [],
+    descricao: "Espaço para um texto, roteiro ou peça de comunicação.",
+    objetivo: "Descreva o objetivo.",
+    participacao: "Descreva sua participação.",
+    ferramentas: "Ex.: Google Docs",
+    resultado: "Descreva o resultado.",
+    aprendizados: "Descreva o que aprendeu."
+  },
+  {
+    exemplo: true,
     titulo: "Ensaio fotográfico (exemplo)",
     categoria: "Fotografia",
-    imagem: "",
+    imagens: [],
     descricao: "Espaço para um trabalho de fotografia.",
     objetivo: "Descreva o objetivo.",
     participacao: "Descreva sua participação.",
@@ -44,43 +59,34 @@ const projetos = [
     aprendizados: "Descreva o que aprendeu."
   },
   {
-    titulo: "Conteúdo Político",
-    categoria: "Design",
-    imagem: "assets/O que não te contaram sobre o 13 de maio_.png",
-    descricao: "Carrossel informativo sobre mulheres negras que tiveram participação na luta abolicionista e na resistência à escravidão no Brasil.",
-    objetivo: "Apresentar informações históricas de forma visual, acessível e educativa.",
-    participacao: "Organização das informações, composição dos cards, seleção e tratamento das imagens e desenvolvimento da identidade visual da peça.",
-    ferramentas: "Canva",
-    resultado: "Carrossel educativo para publicação nas redes sociais.",
-    aprendizados: "Aprimorei a organização de conteúdos históricos e a criação de peças que combinam informação, texto e elementos visuais."
+    exemplo: true,
+    titulo: "Projeto de tecnologia (exemplo)",
+    categoria: "Tecnologia",
+    imagens: [],
+    descricao: "Espaço para um site, sistema ou app que você fez.",
+    objetivo: "Descreva o objetivo.",
+    participacao: "Descreva sua participação.",
+    ferramentas: "Ex.: HTML, CSS, JavaScript",
+    resultado: "Descreva o resultado.",
+    aprendizados: "Descreva o que aprendeu."
   },
   {
-    titulo: "Conteúdo Político",
-    categoria: "Design",
-    imagem: "assets/Coisas que Curitiba deveria ter em 2026.png",
-    descricao: "Carrossel que apresenta, de forma visual e direta, temas relacionados a serviços públicos, transporte, educação, espaços públicos e atendimento à população.",
-    objetivo: "Transformar diferentes pautas públicas em um conteúdo de fácil compreensão para as redes sociais.",
-    participacao: "Desenvolvimento da identidade visual, organização das pautas, criação dos textos e composição dos cards.",
-    ferramentas: "Canva",
-    resultado: "Conteúdo em formato de carrossel, com linguagem visual padronizada e adequada às redes sociais.",
-    aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de informações e desenvolver conteúdos institucionais com linguagem mais acessível."
-  },
-  {
-    titulo: "Conteúdo Político",
-    categoria: "Design",
-    imagem: "assets/5 Parques para conhecer em Curitiba",
-    descricao: "Carrossel com sugestões de parques de Curitiba, reunindo informações sobre os espaços, localização e características de cada lugar.",
-    objetivo: "Produzir um conteúdo informativo e de utilidade pública sobre opções de lazer e espaços da cidade.",
-    participacao: "Pesquisa e organização das informações, seleção de imagens, criação dos textos e desenvolvimento da composição visual.",
-    ferramentas: "Canva",
-    resultado: "Guia visual em formato de carrossel para as redes sociais.",
-    aprendizados: "Desenvolvi habilidades de pesquisa, síntese de informações, curadoria de imagens e criação de conteúdos informativos."
+    exemplo: true,
+    titulo: "Peça institucional (exemplo)",
+    categoria: "Comunicação Institucional",
+    imagens: [],
+    descricao: "Espaço para um material de comunicação institucional.",
+    objetivo: "Descreva o objetivo.",
+    participacao: "Descreva sua participação.",
+    ferramentas: "Ex.: Canva",
+    resultado: "Descreva o resultado.",
+    aprendizados: "Descreva o que aprendeu."
   },
   {
     exemplo: true,
     titulo: "Trabalho da escola (exemplo)",
     categoria: "Projetos acadêmicos",
-    imagem: "",
+    imagens: [],
     descricao: "Espaço para um projeto feito na escola ou no curso.",
     objetivo: "Descreva o objetivo.",
     participacao: "Descreva sua participação.",
@@ -92,7 +98,7 @@ const projetos = [
     exemplo: true,
     titulo: "Conteúdo político (exemplo)",
     categoria: "Comunicação Política",
-    imagem: "",
+    imagens: [],
     descricao: "Espaço para um trabalho de comunicação política que você possa mostrar.",
     objetivo: "Descreva o objetivo.",
     participacao: "Descreva sua participação.",
@@ -108,27 +114,35 @@ const categorias = ["Todos", "Design", "Social Media", "Comunicação", "Fotogra
 const listaEl = document.getElementById("projetos");
 const filtrosEl = document.getElementById("filtros");
 
+function listaImagens(p) {
+  if (p.imagens && p.imagens.length) return p.imagens;
+  return p.imagem ? [p.imagem] : [];
+}
+
 function criarCard(p) {
   const card = document.createElement("article");
   card.className = "card";
-  const img = p.imagem
-    ? '<img src="' + p.imagem + '" alt="' + p.titulo + '" loading="lazy">'
+  card.tabIndex = 0;
+  card.setAttribute("role", "button");
+  card.setAttribute("aria-label", "Abrir projeto: " + p.titulo);
+  const imgs = listaImagens(p);
+  const img = imgs.length
+    ? '<img src="' + imgs[0] + '" alt="' + p.titulo + '" loading="lazy">'
     : "Imagem do projeto";
+  const qtd = imgs.length > 1 ? '<span class="card-qtd">' + imgs.length + " imagens</span>" : "";
   card.innerHTML =
-    '<div class="card-img">' + img + "</div>" +
+    '<div class="card-img">' + img + qtd + "</div>" +
     '<div class="card-corpo">' +
       (p.exemplo ? '<span class="aviso-exemplo">EXEMPLO — SUBSTITUIR</span><br>' : "") +
       '<span class="card-cat">' + p.categoria + "</span>" +
       "<h3>" + p.titulo + "</h3>" +
       "<p>" + p.descricao + "</p>" +
-      "<details><summary>Ver detalhes</summary><dl>" +
-        "<dt>Objetivo</dt><dd>" + p.objetivo + "</dd>" +
-        "<dt>Minha participação</dt><dd>" + p.participacao + "</dd>" +
-        "<dt>Ferramentas</dt><dd>" + p.ferramentas + "</dd>" +
-        "<dt>Resultado</dt><dd>" + p.resultado + "</dd>" +
-        "<dt>Aprendizados</dt><dd>" + p.aprendizados + "</dd>" +
-      "</dl></details>" +
+      '<span class="card-ver">Ver projeto</span>' +
     "</div>";
+  card.addEventListener("click", function () { abrirProjeto(p, card); });
+  card.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); abrirProjeto(p, card); }
+  });
   return card;
 }
 
@@ -149,6 +163,166 @@ categorias.forEach(function (c) {
   filtrosEl.appendChild(b);
 });
 mostrar("Todos");
+
+/* ===== Visualização do projeto (galeria + zoom) — não precisa mexer ===== */
+const modal = document.createElement("div");
+modal.className = "modal";
+modal.innerHTML =
+  '<div class="modal-janela" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">' +
+    '<button class="modal-fechar" type="button" aria-label="Fechar">✕</button>' +
+    '<div class="modal-galeria">' +
+      '<div class="modal-palco"></div>' +
+      '<div class="modal-nav">' +
+        '<button type="button" class="ant" aria-label="Imagem anterior">←</button>' +
+        '<span class="cont" aria-live="polite"></span>' +
+        '<button type="button" class="prox" aria-label="Próxima imagem">→</button>' +
+      "</div>" +
+    "</div>" +
+    '<div class="modal-info">' +
+      '<span class="aviso-exemplo" hidden>EXEMPLO — SUBSTITUIR</span>' +
+      '<span class="card-cat"></span>' +
+      '<h3 id="modalTitulo"></h3>' +
+      '<p class="desc"></p>' +
+      "<dl></dl>" +
+    "</div>" +
+  "</div>";
+document.body.appendChild(modal);
+
+const zoom = document.createElement("div");
+zoom.className = "zoom";
+zoom.setAttribute("role", "dialog");
+zoom.setAttribute("aria-modal", "true");
+zoom.setAttribute("aria-label", "Imagem ampliada");
+zoom.innerHTML = '<button class="zoom-fechar" type="button" aria-label="Fechar imagem ampliada">✕</button><img alt="">';
+document.body.appendChild(zoom);
+
+const palco = modal.querySelector(".modal-palco");
+const navEl = modal.querySelector(".modal-nav");
+const contEl = modal.querySelector(".cont");
+const zoomImg = zoom.querySelector("img");
+const campos = [
+  ["Objetivo", "objetivo"],
+  ["Minha participação", "participacao"],
+  ["Ferramentas", "ferramentas"],
+  ["Resultado", "resultado"],
+  ["Aprendizados", "aprendizados"]
+];
+let projetoAtual = null, imagensAtuais = [], indice = 0, gatilho = null;
+
+function desenhar() {
+  const p = projetoAtual;
+  palco.innerHTML = "";
+  if (imagensAtuais.length) {
+    const img = document.createElement("img");
+    img.src = imagensAtuais[indice];
+    img.alt = p.titulo + " — imagem " + (indice + 1) + " de " + imagensAtuais.length;
+    img.title = "Clique para ampliar";
+    img.addEventListener("click", abrirZoom);
+    palco.appendChild(img);
+  } else {
+    const vazio = document.createElement("div");
+    vazio.className = "modal-vazio";
+    vazio.textContent = "Imagem do projeto";
+    palco.appendChild(vazio);
+  }
+  navEl.hidden = imagensAtuais.length < 2;
+  contEl.textContent = (indice + 1) + "/" + imagensAtuais.length;
+}
+
+function irPara(n) {
+  if (imagensAtuais.length < 2) return;
+  indice = (n + imagensAtuais.length) % imagensAtuais.length;
+  desenhar();
+  if (zoom.classList.contains("aberto")) zoomImg.src = imagensAtuais[indice];
+}
+
+function abrirProjeto(p, origem) {
+  projetoAtual = p;
+  imagensAtuais = listaImagens(p);
+  indice = 0;
+  gatilho = origem;
+  modal.querySelector(".card-cat").textContent = p.categoria;
+  modal.querySelector("h3").textContent = p.titulo;
+  modal.querySelector(".desc").textContent = p.descricao;
+  modal.querySelector(".aviso-exemplo").hidden = !p.exemplo;
+  const dl = modal.querySelector("dl");
+  dl.innerHTML = "";
+  campos.forEach(function (c) {
+    if (!p[c[1]]) return;
+    const dt = document.createElement("dt");
+    dt.textContent = c[0];
+    const dd = document.createElement("dd");
+    dd.textContent = p[c[1]];
+    dl.appendChild(dt);
+    dl.appendChild(dd);
+  });
+  modal.querySelector(".modal-janela").scrollTop = 0;
+  desenhar();
+  modal.classList.add("aberto");
+  document.body.classList.add("modal-aberto");
+  modal.querySelector(".modal-fechar").focus();
+}
+
+function fecharProjeto() {
+  fecharZoom();
+  modal.classList.remove("aberto");
+  document.body.classList.remove("modal-aberto");
+  if (gatilho && document.contains(gatilho)) gatilho.focus();
+}
+
+function abrirZoom() {
+  zoomImg.src = imagensAtuais[indice];
+  zoomImg.alt = projetoAtual.titulo;
+  zoom.classList.add("aberto");
+  zoom.querySelector(".zoom-fechar").focus();
+}
+
+function fecharZoom() {
+  if (!zoom.classList.contains("aberto")) return;
+  zoom.classList.remove("aberto");
+  modal.querySelector(".modal-fechar").focus();
+}
+
+modal.querySelector(".modal-fechar").addEventListener("click", fecharProjeto);
+modal.addEventListener("click", function (e) { if (e.target === modal) fecharProjeto(); });
+modal.querySelector(".ant").addEventListener("click", function () { irPara(indice - 1); });
+modal.querySelector(".prox").addEventListener("click", function () { irPara(indice + 1); });
+zoom.addEventListener("click", fecharZoom);
+
+document.addEventListener("keydown", function (e) {
+  if (!modal.classList.contains("aberto")) return;
+  if (e.key === "Escape") {
+    if (zoom.classList.contains("aberto")) fecharZoom(); else fecharProjeto();
+  } else if (e.key === "ArrowLeft") {
+    irPara(indice - 1);
+  } else if (e.key === "ArrowRight") {
+    irPara(indice + 1);
+  } else if (e.key === "Tab") {
+    const area = zoom.classList.contains("aberto") ? zoom : modal;
+    const foco = Array.prototype.filter.call(
+      area.querySelectorAll("button"),
+      function (b) { return b.offsetParent !== null || area === zoom; }
+    );
+    if (!foco.length) return;
+    const primeiro = foco[0], ultimo = foco[foco.length - 1];
+    if (e.shiftKey && document.activeElement === primeiro) { e.preventDefault(); ultimo.focus(); }
+    else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primeiro.focus(); }
+  }
+});
+
+/* Deslizar o dedo no celular troca de imagem */
+function ativarDeslizar(el) {
+  let x0 = null;
+  el.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  el.addEventListener("touchend", function (e) {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    x0 = null;
+    if (Math.abs(dx) > 50) irPara(dx < 0 ? indice + 1 : indice - 1);
+  }, { passive: true });
+}
+ativarDeslizar(palco);
+ativarDeslizar(zoom);
 
 /* ===== Menu do celular ===== */
 const menuBtn = document.getElementById("menuBtn");
