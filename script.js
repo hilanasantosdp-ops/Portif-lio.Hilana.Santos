@@ -63,7 +63,7 @@ const projetos = [
     titulo: "Fotografias Criarum",
     categoria: "Fotografia",
     imagens: [
-  "assets/Coisas que Curitiba deveria ter eem 2026.png",
+  "assets/Fotografias Criarum.png",
   "assets/IMG_0089.jpg",
   "assets/IMG_0096.jpg",
   "assets/IMG_0288.jpg",
