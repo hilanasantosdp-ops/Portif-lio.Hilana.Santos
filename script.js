@@ -13,7 +13,7 @@ const projetos = [
   {
     titulo: "Post para Instagram",
     categoria: "Design",
-    imagens: [
+    imagens: ["assets/Carrosséis Camilla Gonda.png",
   "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png",
   "assets/gato 1.png",
   "assets/gato 2.png",
