@@ -44,8 +44,7 @@ resultado: "Peças prontas para publicação em formatos de carrossel e conteúd
   "assets/peixe 4.png",
   "assets/peixe 5.png",
   "assets/peixe 6.png",
-  "assets/peixe 7.png",
-  "assets/peixe 8.png"
+  "assets/peixe 7.png"
 ],
 descricao: "Carrossel que apresenta, de forma visual e direta, temas relacionados a serviços públicos, transporte, educação, espaços públicos e atendimento à população.",
 objetivo: "Transformar diferentes pautas públicas em um conteúdo de fácil compreensão para as redes sociais.",
@@ -66,8 +65,7 @@ aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de 
   "assets/cachorro 4.png",
   "assets/cachorro 5.png",
   "assets/cachorro 6.png",
-  "assets/cachorro 7.png",
-  "assets/cachorro 8.png"
+  "assets/cachorro 7.png"
     ],
     descricao: "Carrossel com sugestões de parques de Curitiba, reunindo informações sobre os espaços, localização e características de cada lugar.",
     objetivo: "Produzir um conteúdo informativo e de utilidade pública sobre opções de lazer e espaços da cidade.",
@@ -88,8 +86,7 @@ aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de 
   "assets/Leão 4.png",
   "assets/Leão 5.png",
   "assets/Leão 6.png",
-  "assets/Leão 7.png",
-  "assets/Leão 8.png"
+  "assets/Leão 7.png"
 ],
     descricao: "Carrossel informativo sobre mulheres negras que tiveram participação na luta abolicionista e na resistência à escravidão no Brasil.",
     objetivo: "Apresentar informações históricas de forma visual, acessível e educativa.",
