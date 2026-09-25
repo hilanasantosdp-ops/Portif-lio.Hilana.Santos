@@ -60,25 +60,42 @@ const projetos = [
     aprendizados: "Desenvolvi habilidades de pesquisa, síntese e organização de informações, redação para redes sociais, direção visual, seleção e tratamento de imagens e construção de hierarquia de conteúdo. Também aprendi a adaptar temas técnicos ou complexos para uma linguagem mais simples, visual e adequada ao público das redes sociais."
   },
   {
-    titulo: "Post para Instagram",
-    categoria: "Design",
+    titulo: "Fotografias Criarum",
+    categoria: "fotografia",
     imagens: [
   "assets/Coisas que Curitiba deveria ter eem 2026.png",
-  "assets/Coisas que Curitiba deveria ter em 2026.png",
-  "assets/peixe 1.png",
-  "assets/peixe 2.png",
-  "assets/peixe 3.png",
-  "assets/peixe 4.png",
-  "assets/peixe 5.png",
-  "assets/peixe 6.png",
-  "assets/peixe 7.png"
+  "assets/IMG_0089.CR2",
+  "assets/IMG_0096.CR2",
+  "assets/IMG_0288.JPG",
+  "assets/IMG_0599 (1).CR2",
+  "assets/IMG_0664.CR2",
+  "assets/IMG_8534.jpg",
+  "assets/IMG_8945.jpg",
+  "assets/IMG_9306.jpg",
+   "assets/IMG_9372.jpg",
+  "assets/IMG_9381.jpg",
+  "assets/IMG_9382.jpg",
+  "assets/IMG_9389.jpg",
+       "assets/IMG_9733.jpg",
+       "assets/IMG_9741.jpg",
+       "assets/IMG_9972.jpg",
+       "assets/Screenshot_2025-06-03-15-39-27-95_99c04817c0de5652397fc8b56c3b3817.jpg",
+       "assets/Screenshot_2025-06-03-15-39-29-93_99c04817c0de5652397fc8b56c3b3817.jpg",
+       "assets/sem título.jpg",
+       "assets/sem título-2.jpg",
+       "assets/sem título-3.jpg",
+       "assets/sem título-4.jpg",
 ],
-    descricao: "Carrossel que apresenta, de forma visual e direta, temas relacionados a serviços públicos, transporte, educação, espaços públicos e atendimento à população.",
-    objetivo: "Transformar diferentes pautas públicas em um conteúdo de fácil compreensão para as redes sociais.",
-    participacao: "Desenvolvimento da identidade visual, organização das pautas, criação dos textos e composição dos cards.",
-    ferramentas: "Canva",
-    resultado: "Conteúdo em formato de carrossel, com linguagem visual padronizada e adequada às redes sociais.",
-    aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de informações e desenvolver conteúdos institucionais com linguagem mais acessível."
+    descrição: "Produção de fotografias com foco em pessoas, explorando direção, composição, iluminação e diferentes formas de retratar cada indivíduo. Entre os trabalhos, está um TCC com temática inspirada nos anos 2000, utilizando estética, figurino e elementos visuais característicos da época.",
+objetivo: "Desenvolver uma linguagem fotográfica própria e explorar a fotografia como forma de expressão e representação de pessoas.",
+participação:
+"Atuação na produção e realização das fotografias, incluindo direção das pessoas fotografadas, composição das cenas, escolha de enquadramentos e construção da estética dos ensaios.",
+ferramentas:
+"Câmera fotográfica e ferramentas de edição de imagem.",
+resultado:
+"Produção de ensaios e registros fotográficos, incluindo o projeto de TCC inspirado na estética dos anos 2000.",
+aprendizados:
+"Aprimorei técnicas de fotografia, direção de pessoas, composição, iluminação e edição, além de desenvolver maior atenção à estética e à narrativa visual.",
   },
   {
     titulo: "Post para Instagram",
