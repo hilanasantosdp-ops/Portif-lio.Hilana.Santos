@@ -68,7 +68,7 @@ const projetos = [
   "assets/IMG_0096.jpg",
   "assets/IMG_0288.jpg",
   "assets/IMG_0599 (1).jpg",
-  "assets/IMG_0664.CR2",
+  "assets/IMG_0664.jpg",
   "assets/IMG_8534.jpg",
   "assets/IMG_8945.jpg",
   "assets/IMG_9306.jpg",
