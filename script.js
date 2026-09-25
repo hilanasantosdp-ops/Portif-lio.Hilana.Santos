@@ -13,7 +13,8 @@ const projetos = [
   {
     titulo: "Post para Instagram",
     categoria: "Design",
-    imagens: ["assets/capa Carrosséis Camilla Gonda.png",
+    imagens: [
+  "assets/Carrosséis Camilla Gonda.png",
   "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png",
   "assets/gato 1.png",
   "assets/gato 2.png",
@@ -32,40 +33,70 @@ resultado: "Peças prontas para publicação em formatos de carrossel e conteúd
    aprendizados: "Aprimorei a criação de conteúdos para redes sociais, hierarquia de informações, composição visual e adaptação de linguagem para diferentes públicos"
   },
   {
-    exemplo: true,
-    titulo: "Campanha para redes (exemplo)",
-    categoria: "Social Media",
-    imagens: [],
-    descricao: "Espaço para um trabalho de social media.",
-    objetivo: "Descreva o objetivo.",
-    participacao: "Descreva sua participação.",
-    ferramentas: "Ex.: Instagram, Canva",
-    resultado: "Descreva o resultado.",
-    aprendizados: "Descreva o que aprendeu."
+    titulo: "Post para Instagram",
+    categoria: "Design",
+    imagens: [
+  "assets/Carrosséis Camilla Gonda.png",
+  "assets/Coisas que Curitiba deveria ter em 2026.png"
+  "assets/peixe 1.png",
+  "assets/peixe 2.png",
+  "assets/peixe 3.png",
+  "assets/peixe 4.png",
+  "assets/peixe 5.png",
+  "assets/peixe 6.png",
+  "assets/peixe 7.png",
+  "assets/peixe 8.png"
+],
+descricao: "Carrossel que apresenta, de forma visual e direta, temas relacionados a serviços públicos, transporte, educação, espaços públicos e atendimento à população.",
+objetivo: "Transformar diferentes pautas públicas em um conteúdo de fácil compreensão para as redes sociais.",
+participacao: "Desenvolvimento da identidade visual, organização das pautas, criação dos textos e composição dos cards.",
+ferramentas: "Canva",
+resultado: "Conteúdo em formato de carrossel, com linguagem visual padronizada e adequada às redes sociais.",
+aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de informações e desenvolver conteúdos institucionais com linguagem mais acessível."
   },
   {
-    exemplo: true,
-    titulo: "Texto ou roteiro (exemplo)",
-    categoria: "Comunicação",
-    imagens: [],
-    descricao: "Espaço para um texto, roteiro ou peça de comunicação.",
-    objetivo: "Descreva o objetivo.",
-    participacao: "Descreva sua participação.",
-    ferramentas: "Ex.: Google Docs",
-    resultado: "Descreva o resultado.",
-    aprendizados: "Descreva o que aprendeu."
+    titulo: "Post para Instagram",
+    categoria: "Design",
+    imagens: [
+  "assets/Carrosséis Camilla Gonda.png",
+  "assets/5 Parques para conhecer em Curitiba.png",
+  "assets/cachorro 1.png",
+  "assets/cachorro 2.png",
+  "assets/cachorro 3.png",
+  "assets/cachorro 4.png",
+  "assets/cachorro 5.png",
+  "assets/cachorro 6.png",
+  "assets/cachorro 7.png",
+  "assets/cachorro 8.png"
+    ],
+    descricao: "Carrossel com sugestões de parques de Curitiba, reunindo informações sobre os espaços, localização e características de cada lugar.",
+    objetivo: "Produzir um conteúdo informativo e de utilidade pública sobre opções de lazer e espaços da cidade.",
+    participacao: "Pesquisa e organização das informações, seleção de imagens, criação dos textos e desenvolvimento da composição visual.",
+    ferramentas: "Canva",
+    resultado: "Guia visual em formato de carrossel para as redes sociais.",
+    aprendizados: "Desenvolvi habilidades de pesquisa, síntese de informações, curadoria de imagens e criação de conteúdos informativos."
   },
   {
-    exemplo: true,
-    titulo: "Ensaio fotográfico (exemplo)",
-    categoria: "Fotografia",
-    imagens: [],
-    descricao: "Espaço para um trabalho de fotografia.",
-    objetivo: "Descreva o objetivo.",
-    participacao: "Descreva sua participação.",
-    ferramentas: "Ex.: celular, Lightroom",
-    resultado: "Descreva o resultado.",
-    aprendizados: "Descreva o que aprendeu."
+    titulo: "Post para Instagram",
+    categoria: "Design",
+    imagens: [
+  "assets/Carrosséis Camilla Gonda.png",
+  "assets/O que não te contaram sobre o 13 de maio_",
+  "assets/Leão 1.png",
+  "assets/Leão 2.png",
+  "assets/Leão 3.png",
+  "assets/Leão 4.png",
+  "assets/Leão 5.png",
+  "assets/Leão 6.png",
+  "assets/Leão 7.png",
+  "assets/Leão 8.png"
+],
+    descricao: "Carrossel informativo sobre mulheres negras que tiveram participação na luta abolicionista e na resistência à escravidão no Brasil.",
+    objetivo: "Apresentar informações históricas de forma visual, acessível e educativa.",
+    participacao: "Organização das informações, composição dos cards, seleção e tratamento das imagens e desenvolvimento da identidade visual da peça.",
+    ferramentas: "Canva",
+    resultado: "Carrossel educativo para publicação nas redes sociais.",
+    aprendizados: "Aprimorei a organização de conteúdos históricos e a criação de peças que combinam informação, texto e elementos visuais."
   },
   {
     exemplo: true,
