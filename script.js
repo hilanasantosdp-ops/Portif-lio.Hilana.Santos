@@ -37,7 +37,7 @@ resultado: "Peças prontas para publicação em formatos de carrossel e conteúd
     categoria: "Design",
     imagens: [
   "assets/Carrosséis Camilla Gonda.png",
-  "assets/Coisas que Curitiba deveria ter em 2026.png"
+  "assets/Coisas que Curitiba deveria ter em 2026.png",
   "assets/peixe 1.png",
   "assets/peixe 2.png",
   "assets/peixe 3.png",
@@ -81,7 +81,7 @@ aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de 
     categoria: "Design",
     imagens: [
   "assets/Carrosséis Camilla Gonda.png",
-  "assets/O que não te contaram sobre o 13 de maio_",
+  "assets/O que não te contaram sobre o 13 de maio_.png",
   "assets/Leão 1.png",
   "assets/Leão 2.png",
   "assets/Leão 3.png",
