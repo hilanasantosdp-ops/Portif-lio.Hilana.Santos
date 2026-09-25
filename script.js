@@ -14,7 +14,7 @@ const projetos = [
     titulo: "Post para Instagram",
     categoria: "Design",
     imagens: [
-  "assets/Carrosséis Camilla Gonda.png",
+  "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gondaaa.png",
   "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png",
   "assets/gato 1.png",
   "assets/gato 2.png",
@@ -36,7 +36,7 @@ resultado: "Peças prontas para publicação em formatos de carrossel e conteúd
     titulo: "Post para Instagram",
     categoria: "Design",
     imagens: [
-  "assets/Carrosséis Camilla Gonda.png",
+  "assets/Coisas que Curitiba deveria ter eem 2026.png",
   "assets/Coisas que Curitiba deveria ter em 2026.png",
   "assets/peixe 1.png",
   "assets/peixe 2.png",
@@ -57,7 +57,7 @@ aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de 
     titulo: "Post para Instagram",
     categoria: "Design",
     imagens: [
-  "assets/Carrosséis Camilla Gonda.png",
+  "assets/5 Parques para conhecer em Curitibaa.png",
   "assets/5 Parques para conhecer em Curitiba.png",
   "assets/cachorro 1.png",
   "assets/cachorro 2.png",
@@ -78,7 +78,7 @@ aprendizados: "Aprendi a sintetizar assuntos complexos, trabalhar hierarquia de 
     titulo: "Post para Instagram",
     categoria: "Design",
     imagens: [
-  "assets/Carrosséis Camilla Gonda.png",
+  "assets/O que não te contaram sobre o 13 de maio.png",
   "assets/O que não te contaram sobre o 13 de maio_.png",
   "assets/Leão 1.png",
   "assets/Leão 2.png",
