@@ -11,10 +11,10 @@
    ===================================================== */
 const projetos = [
   {
-    titulo: "Post para Instagram",
+    titulo: "Carrosséis Camilla Gonda",
     categoria: "Design",
     imagens: [
-  "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gondaaa.png",
+  "assets/Carrosséis Camilla Gonda.png",
   "assets/Temos que ir conhecer o gabinete da vereadora Camilla Gonda.png",
   "assets/gato 1.png",
   "assets/gato 2.png",
@@ -23,14 +23,38 @@ const projetos = [
   "assets/gato 5.png",
   "assets/gato 6.png",
   "assets/gato 7.png",
-  "assets/gato 8.png"
+  "assets/gato 8.png",
+  "assets/Coisas que Curitiba deveria ter em 2026.png",
+  "assets/peixe 1.png",
+  "assets/peixe 2.png",
+  "assets/peixe 3.png",
+  "assets/peixe 4.png",
+  "assets/peixe 5.png",
+  "assets/peixe 6.png",
+  "assets/peixe 7.png",
+  "assets/5 Parques para conhecer em Curitiba.png",
+  "assets/cachorro 1.png",
+  "assets/cachorro 2.png",
+  "assets/cachorro 3.png",
+  "assets/cachorro 4.png",
+  "assets/cachorro 5.png",
+  "assets/cachorro 6.png",
+  "assets/cachorro 7.png",
+        "assets/O que não te contaram sobre o 13 de maio_.png",
+  "assets/Leão 1.png",
+  "assets/Leão 2.png",
+  "assets/Leão 3.png",
+  "assets/Leão 4.png",
+  "assets/Leão 5.png",
+  "assets/Leão 6.png",
+  "assets/Leão 7.png"
 ],
-    descricao: "Conjunto de peças para redes sociais, utilizando diferentes formatos visuais para apresentar o trabalho do gabinete, pautas públicas e conteúdos informativos.",
-    objetivo: "Criar conteúdos acessíveis e visualmente atrativos para comunicar temas do mandato nas redes sociais.",
-   participacao: "Criação da estrutura visual, organização das informações, definição de textos e adaptação do conteúdo para o formato das redes sociais.",
-   ferramentas: "Canva",
-resultado: "Peças prontas para publicação em formatos de carrossel e conteúdo vertical.",
-   aprendizados: "Aprimorei a criação de conteúdos para redes sociais, hierarquia de informações, composição visual e adaptação de linguagem para diferentes públicos"
+    descricao:"Criação de conteúdos visuais para redes sociais, incluindo carrosséis informativos, conteúdos de utilidade pública, pautas do mandato, temas históricos e conteúdos sobre Curitiba. As peças combinam pesquisa, texto, imagens e identidade visual para transformar informações em conteúdos acessíveis e atrativos.",
+objetivo:"Comunicar o trabalho do mandato e temas de interesse público de forma clara, acessível e visualmente atrativa, aproximando as informações da população e fortalecendo a comunicação nas redes sociais.",
+participacao:"Atuei na pesquisa e organização das informações, definição e redação dos textos, seleção e tratamento de imagens, criação da identidade visual, composição dos cards, hierarquia das informações e adaptação dos conteúdos para formatos de Instagram e TikTok. Também desenvolvi diferentes abordagens visuais de acordo com o tema e o público de cada publicação.",
+ferramentas:"Canva",
+resultado:"Produção de uma variedade de peças para as redes sociais do gabinete, desde conteúdos educativos e históricos até materiais sobre serviços públicos, lazer, transporte, educação e demandas de Curitiba, mantendo uma identidade visual reconhecível e uma comunicação direta.",
+aprendizados:"Desenvolvi habilidades de pesquisa, síntese e organização de informações, redação para redes sociais, direção visual, seleção e tratamento de imagens e construção de hierarquia de conteúdo. Também aprendi a adaptar temas técnicos ou complexos para uma linguagem mais simples, visual e adequada ao público das redes sociais."
   },
   {
     titulo: "Post para Instagram",
