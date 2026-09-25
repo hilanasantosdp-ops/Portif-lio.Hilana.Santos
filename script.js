@@ -61,7 +61,7 @@ const projetos = [
   },
   {
     titulo: "Fotografias Criarum",
-    categoria: "fotografia",
+    categoria: "Fotografia",
     imagens: [
   "assets/Coisas que Curitiba deveria ter eem 2026.png",
   "assets/IMG_0089.jpg",
@@ -84,18 +84,14 @@ const projetos = [
        "assets/sem título.jpg",
        "assets/sem título-2.jpg",
        "assets/sem título-3.jpg",
-       "assets/sem título-4.jpg",
+       "assets/sem título-4.jpg"
 ],
     descrição: "Produção de fotografias com foco em pessoas, explorando direção, composição, iluminação e diferentes formas de retratar cada indivíduo. Entre os trabalhos, está um TCC com temática inspirada nos anos 2000, utilizando estética, figurino e elementos visuais característicos da época.",
 objetivo: "Desenvolver uma linguagem fotográfica própria e explorar a fotografia como forma de expressão e representação de pessoas.",
-participação:
-"Atuação na produção e realização das fotografias, incluindo direção das pessoas fotografadas, composição das cenas, escolha de enquadramentos e construção da estética dos ensaios.",
-ferramentas:
-"Câmera fotográfica e ferramentas de edição de imagem.",
-resultado:
-"Produção de ensaios e registros fotográficos, incluindo o projeto de TCC inspirado na estética dos anos 2000.",
-aprendizados:
-"Aprimorei técnicas de fotografia, direção de pessoas, composição, iluminação e edição, além de desenvolver maior atenção à estética e à narrativa visual.",
+participação: "Atuação na produção e realização das fotografias, incluindo direção das pessoas fotografadas, composição das cenas, escolha de enquadramentos e construção da estética dos ensaios.",
+ferramentas: "Câmera fotográfica e ferramentas de edição de imagem.",
+resultado: "Produção de ensaios e registros fotográficos, incluindo o projeto de TCC inspirado na estética dos anos 2000.",
+aprendizados: "Aprimorei técnicas de fotografia, direção de pessoas, composição, iluminação e edição, além de desenvolver maior atenção à estética e à narrativa visual.",
   },
   {
     titulo: "Post para Instagram",
