@@ -1,168 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hilana Santos — Portfólio</title>
-  <meta name="description" content="Portfólio de Hilana Santos: comunicação, criatividade e tecnologia em construção.">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="Portfólio editorial de Hilana Santos — comunicação, design e criatividade.">
+  <title>Hilana Santos — Design & Comunicação</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-site">Pular para o conteúdo</a>
 
-<div class="lombada" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Hilana Santos — início">HILANA SANTOS<span class="wordmark__dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" id="primary-nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos <span>01</span></a>
+      <a href="#sobre">Sobre <span>02</span></a>
+      <a href="#contato">Contato <span>03</span></a>
+    </nav>
+    <span class="header-note">PORTFÓLIO INDEPENDENTE <i>·</i> 2026</span>
+  </header>
 
-<header class="topo">
-  <a href="#home" class="logo">Hilana Santos</a>
-  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
-  <nav id="menu">
-    <a href="#sobre">Sobre mim</a>
-    <a href="#experiencia">Experiência</a>
-    <a href="#formacao">Formação</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#portfolio">Portfólio</a>
-    <a href="#trajetoria">Trajetória</a>
-    <a href="#politica">Comunicação Política</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
+  <main id="main-site">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__topline">
+        <span>DESIGN — COMUNICAÇÃO — CRIATIVIDADE</span>
+        <span>PORTFOLIO <b>—</b> 2026</span>
+      </div>
 
-<main>
+      <div class="hero__stage">
+        <div class="hero__side-note" aria-hidden="true">
+          <span class="side-note__line"></span>
+          <span>UM OLHAR<br>EM CONSTRUÇÃO</span>
+        </div>
+        <div class="hero__title-wrap">
+          <p class="eyebrow">HILANA SANTOS <span>· DIREÇÃO CRIATIVA</span></p>
+          <h1 id="hero-title">HILANA<br><em>SANTOS</em></h1>
+          <div class="hero__caption">
+            <p>Comunicação, design<br>e criatividade.</p>
+            <span class="script-note">ideias com intenção</span>
+          </div>
+        </div>
 
-<section id="home" class="hero">
-  <div class="hero-texto">
-    <h1>Hilana<br>Santos</h1>
-    <p class="frase">Comunicação, criatividade e tecnologia em construção.</p>
-    <p class="sub">Estudante de Desenvolvimento de Sistemas • Comunicação • Design • Social Media</p>
-    <div class="botoes">
-      <a class="btn btn-cheio" href="#portfolio">VER PORTFÓLIO</a>
-      <a class="btn" href="#sobre">SOBRE MIM</a>
-      <a class="btn" href="#contato">ENTRAR EM CONTATO</a>
-    </div>
-  </div>
-  <!-- FOTO: coloque sua foto em assets/foto.jpg (o site troca sozinho) -->
-  <div class="foto">
-    <img src="assets/foto.jpg" alt="Foto de Hilana Santos" onerror="this.remove()">
-    <span class="foto-aviso">Sua foto aqui<br><small>assets/foto.jpg</small></span>
-  </div>
-</section>
+        <figure class="hero__artwork">
+          <img src="assets/casa-amora-cover.svg" alt="Estudo visual conceitual Casa Amora, em tons de vinho, rosa queimado e bege">
+          <figcaption><span>FIG. 01</span> ESTUDO DE IDENTIDADE VISUAL</figcaption>
+        </figure>
+        <div class="hero__seal" aria-hidden="true"><span>CREATIVE<br>ARCHIVE</span><b>✳</b><small>H · S</small></div>
+        <div class="hero__folio" aria-hidden="true"><span>01</span><i></i><span>05</span></div>
+      </div>
+      <a class="scroll-cue" href="#projetos"><span>ROLE PARA EXPLORAR</span><i>↓</i></a>
+      <div class="hero__bottomline"><span>ARQUIVO PESSOAL DE PROCESSOS & IDEIAS</span><span>BRASIL · 2026</span></div>
+    </section>
 
-<section id="sobre" class="bloco reveal">
-  <h2>Sobre mim</h2>
-  <p>Tenho 16 anos e moro no Sítio Cercado, em Curitiba. Cursando o 2º ano do Ensino Médio Técnico em Desenvolvimento de Sistemas, divido meu tempo entre a tecnologia e a comunicação.</p>
-  <p>Trabalho na Câmara Municipal de Curitiba e tenho interesse em comunicação, design, social media, fotografia, produção de conteúdo, publicidade e comunicação institucional. Quero unir tudo isso em uma carreira.</p>
-</section>
+    <section class="projects section-shell" id="projetos" aria-labelledby="projects-title">
+      <div class="section-kicker"><span>01 / SELEÇÃO</span><span>CREATIVE ARCHIVE</span></div>
+      <div class="section-heading projects__heading">
+        <div><p class="eyebrow">UM RECORTE DO MEU UNIVERSO</p><h2 id="projects-title">Meus <em>projetos</em></h2></div>
+        <p class="section-intro">Ideias em forma, cor e palavra.<br>Um arquivo de estudos visuais.</p>
+      </div>
 
-<section id="experiencia" class="bloco reveal">
-  <h2>Experiência</h2>
-  <article class="item">
-    <h3>Câmara Municipal de Curitiba</h3>
-    <p class="meta">Gabinete da Camilla • Atual</p>
-    <p>Experiência profissional em comunicação dentro de um ambiente institucional, com apoio à comunicação digital do gabinete.</p>
-    <ul class="tags">
-      <li>Clipping</li><li>Instagram</li><li>TikTok</li><li>Comentários e respostas</li>
-      <li>Posts</li><li>Roteiros</li><li>Capas para Reels</li><li>Flickr</li>
-      <li>Instagram Insights</li><li>TikTok Insights</li><li>Acompanhamento de desempenho</li><li>Organização de conteúdo</li>
-    </ul>
-  </article>
-</section>
+      <div class="project-grid" role="group" aria-label="Projetos selecionados">
+        <button class="project-card project-card--wide" type="button" data-project="casa-amora" aria-label="Abrir estudo conceitual Casa Amora">
+          <span class="project-card__image"><img src="assets/casa-amora-cover.svg" alt="" loading="lazy"><span class="project-card__overlay">VIEW PROJECT <b>↗</b></span><span class="project-card__index">01</span></span>
+          <span class="project-card__meta"><span><b>01 — CASA AMORA</b><small>Estudo conceitual · Identidade visual</small></span><span class="project-card__arrow">↗</span></span>
+        </button>
+        <button class="project-card project-card--tall" type="button" data-project="mormaco" aria-label="Abrir estudo conceitual Mormaço">
+          <span class="project-card__image"><img src="assets/mormaco-cover.svg" alt="" loading="lazy"><span class="project-card__overlay">VIEW PROJECT <b>↗</b></span><span class="project-card__index">02</span></span>
+          <span class="project-card__meta"><span><b>02 — MORMAÇO</b><small>Estudo conceitual · Campanha & direção de arte</small></span><span class="project-card__arrow">↗</span></span>
+        </button>
+        <button class="project-card project-card--portrait" type="button" data-project="entrelinhas" aria-label="Abrir estudo conceitual Entrelinhas">
+          <span class="project-card__image"><img src="assets/entrelinhas-cover.svg" alt="" loading="lazy"><span class="project-card__overlay">VIEW PROJECT <b>↗</b></span><span class="project-card__index">03</span></span>
+          <span class="project-card__meta"><span><b>03 — ENTRELINHAS</b><small>Estudo conceitual · Projeto editorial</small></span><span class="project-card__arrow">↗</span></span>
+        </button>
+        <button class="project-card project-card--wide project-card--offset" type="button" data-project="vinho-de-domingo" aria-label="Abrir estudo conceitual Vinho de Domingo">
+          <span class="project-card__image"><img src="assets/vinho-cover.svg" alt="" loading="lazy"><span class="project-card__overlay">VIEW PROJECT <b>↗</b></span><span class="project-card__index">04</span></span>
+          <span class="project-card__meta"><span><b>04 — VINHO DE DOMINGO</b><small>Estudo conceitual · Embalagem & identidade</small></span><span class="project-card__arrow">↗</span></span>
+        </button>
+        <button class="project-card project-card--last" type="button" data-project="jardim-de-dentro" aria-label="Abrir estudo conceitual Jardim de Dentro">
+          <span class="project-card__image"><img src="assets/jardim-cover.svg" alt="" loading="lazy"><span class="project-card__overlay">VIEW PROJECT <b>↗</b></span><span class="project-card__index">05</span></span>
+          <span class="project-card__meta"><span><b>05 — JARDIM DE DENTRO</b><small>Estudo conceitual · Social & conteúdo</small></span><span class="project-card__arrow">↗</span></span>
+        </button>
+      </div>
+      <div class="projects__endnote"><span>05 PEÇAS</span><span class="script-note">e muitas ideias pela frente</span><span>DESLIZE PARA VER MAIS <b>↓</b></span></div>
+    </section>
 
-<section id="formacao" class="bloco reveal">
-  <h2>Formação</h2>
-  <article class="item">
-    <h3>Ensino Médio Técnico em Desenvolvimento de Sistemas</h3>
-    <p class="meta">Colégio Estadual Inês Vicente Borocz • 2º ano</p>
-    <p>Contato com tecnologia, programação, lógica e desenvolvimento web, aprendendo a transformar ideias em sistemas e páginas que funcionam.</p>
-  </article>
-</section>
+    <section class="about section-shell" id="sobre" aria-labelledby="about-title">
+      <div class="section-kicker"><span>02 / QUEM SOU</span><span>NOTAS SOBRE MIM</span></div>
+      <div class="about__layout">
+        <figure class="about__portrait">
+          <img src="assets/retrato-editorial.svg" alt="Ilustração editorial abstrata, imagem provisória para substituir por um retrato pessoal" loading="lazy">
+          <figcaption><span>HILANA SANTOS</span><span>UM RETRATO EM IDEIAS</span></figcaption>
+          <span class="about__portrait-note script-note">prazer, Hilana</span>
+        </figure>
+        <div class="about__copy">
+          <p class="eyebrow">DESIGN / COMUNICAÇÃO / CRIATIVIDADE</p>
+          <h2 id="about-title">Criar é dar<br><em>forma ao sentir.</em></h2>
+          <p class="about__lead">Sou Hilana Santos. Gosto de transformar ideias em imagens, palavras e experiências que criam conexão.</p>
+          <p class="about__text">Meu olhar passeia pelo design gráfico, pela comunicação e pela direção visual. Acredito em projetos com intenção: aqueles que encontram a própria voz nos detalhes, no ritmo e na escolha de cada forma.</p>
+          <div class="about__signature"><span>COM CURIOSIDADE,</span><span class="script-note">Hilana</span></div>
+        </div>
+      </div>
 
-<section id="cursos" class="bloco reveal">
-  <h2>Cursos</h2>
-  <div class="grade">
-    <article class="item">
-      <h3>Design Gráfico Web</h3>
-      <p class="meta">Módulos 1 e 2 • 500 horas • Concluído</p>
-      <p>Formação em design e criação visual, com foco em composição, identidade e materiais para o ambiente digital.</p>
-    </article>
-    <article class="item">
-      <h3>Comunicação</h3>
-      <p class="meta">250 horas • Concluído</p>
-      <p>Curso profissionalizante que trouxe a base para produzir conteúdo e se comunicar com clareza.</p>
-    </article>
-  </div>
-</section>
+      <div class="skills-block">
+        <div class="skills-block__title"><span>MEU CAMPO DE CRIAÇÃO</span><span>02—06</span></div>
+        <ul class="skills-list">
+          <li><span>01</span>Design gráfico <i>↗</i></li>
+          <li><span>02</span>Social media <i>↗</i></li>
+          <li><span>03</span>Direção criativa <i>↗</i></li>
+          <li><span>04</span>Identidade visual <i>↗</i></li>
+          <li><span>05</span>Conteúdo <i>↗</i></li>
+          <li><span>06</span>Comunicação <i>↗</i></li>
+        </ul>
+      </div>
+    </section>
 
-<section id="atividades" class="bloco reveal">
-  <h2>Atividades e liderança</h2>
-  <div class="grade tres">
-    <article class="item"><h3>Aluna Monitor</h3><p class="meta">Colégio Estadual Inês Vicente Borocz</p><p>Atuação de apoio na rotina da escola.</p></article>
-    <article class="item"><h3>Representante do Ensino Médio</h3><p class="meta">Colégio Estadual Inês Vicente Borocz</p><p>Representação dos colegas do Ensino Médio.</p></article>
-    <article class="item"><h3>Maratona Tech</h3><p class="meta">Até a segunda fase</p><p>Participação em uma competição de tecnologia.</p></article>
-  </div>
-  <article class="item destaque">
-    <h3>Comissão DIRI — OAB Paraná</h3>
-    <p class="meta">Diretoria de Representatividade Infantojuvenil / Comissão Mirim de Defesa dos Direitos da Criança e do Adolescente</p>
-    <p>Participação voltada à representatividade e à cidadania, com contato com a comunicação e com o conhecimento sobre os direitos da criança e do adolescente.</p>
-  </article>
-</section>
+    <section class="journey section-shell" id="trajetoria" aria-labelledby="journey-title">
+      <div class="section-kicker"><span>03 / PERCURSO</span><span>EM MOVIMENTO</span></div>
+      <div class="journey__heading"><p class="eyebrow">O TEMPO TAMBÉM DESENHA</p><h2 id="journey-title">Uma trajetória<br><em>em construção.</em></h2><p>Pequenos começos, repertório em movimento<br>e espaço para o que ainda vem.</p></div>
+      <div class="timeline">
+        <article class="timeline__item"><span class="timeline__year">2024</span><div><span class="timeline__marker">01 <i></i></span><h3>Primeiros projetos</h3><p>Ideias ganhando forma e curiosidade virando prática.</p></div><span class="timeline__tag">COMEÇO</span></article>
+        <article class="timeline__item"><span class="timeline__year">2025</span><div><span class="timeline__marker">02 <i></i></span><h3>Design & comunicação</h3><p>Novos repertórios, experimentos e projetos criativos.</p></div><span class="timeline__tag">REPERTÓRIO</span></article>
+        <article class="timeline__item"><span class="timeline__year">2026</span><div><span class="timeline__marker">03 <i></i></span><h3>Novos caminhos</h3><p>Mais histórias para contar, marcas para imaginar e ideias para explorar.</p></div><span class="timeline__tag">AGORA</span></article>
+      </div>
+      <p class="timeline__note">* Linha do tempo em texto-base editável — personalize com suas datas e experiências reais antes de publicar.</p>
+    </section>
 
-<section id="habilidades" class="bloco reveal">
-  <h2>Habilidades</h2>
-  <ul class="tags grandes">
-    <li>Organização</li><li>Comunicação</li><li>Trabalho em equipe</li><li>Liderança</li>
-    <li>Criatividade</li><li>Produção de conteúdo</li><li>Social Media</li><li>Design</li>
-    <li>Fotografia</li><li>Comunicação institucional</li><li>Tecnologia</li><li>Aprendizado rápido</li>
-  </ul>
-  <h3 class="objetivo-titulo">Objetivo profissional</h3>
-  <p>Continuar desenvolvendo experiência em comunicação, produção de conteúdo, social media, comunicação institucional, design e tecnologia, e no futuro construir uma carreira em Comunicação Política.</p>
-</section>
+    <section class="contact section-shell" id="contato" aria-labelledby="contact-title">
+      <div class="section-kicker"><span>04 / PRÓXIMO CAPÍTULO</span><span>CONTATO</span></div>
+      <div class="contact__layout">
+        <div><p class="eyebrow">TEM UMA IDEIA EM MENTE?</p><h2 id="contact-title">Vamos criar<br><em>algo bonito?</em></h2></div>
+        <div class="contact__aside"><p>Projetos, conversas e encontros criativos começam com um oi.</p><a class="contact__link" href="mailto:seuemail@exemplo.com">SEUEMAIL@EXEMPLO.COM <span>↗</span></a><small>Troque este endereço pelo seu e-mail antes de publicar.</small></div>
+      </div>
+      <div class="contact__stamp" aria-hidden="true"><span>HILANA<br>SANTOS</span><i>✳</i></div>
+    </section>
+  </main>
 
-<section id="portfolio" class="bloco reveal">
-  <h2>Meus projetos</h2>
-  <div class="filtros" id="filtros"></div>
-  <div class="projetos" id="projetos"></div>
-</section>
+  <main class="project-view" id="project-view" hidden aria-live="polite" aria-label="Detalhe do projeto">
+    <div id="project-content"></div>
+  </main>
 
-<section id="trajetoria" class="bloco reveal">
-  <h2>Trajetória</h2>
-  <ol class="timeline">
-    <li><h3>Design</h3><p>Onde comecei a olhar com atenção para a criação visual.</p></li>
-    <li><h3>Comunicação</h3><p>Aprendi a organizar ideias e falar com clareza.</p></li>
-    <li><h3>Social Media</h3><p>Levei a comunicação para as redes, com conteúdo e análise de desempenho.</p></li>
-    <li><h3>Comunicação Institucional</h3><p>Experiência dentro de um ambiente público e institucional.</p></li>
-    <li><h3>Tecnologia</h3><p>O curso técnico me dá lógica, programação e visão de web.</p></li>
-    <li><h3>Comunicação Política</h3><p>A área que quero desenvolver no futuro.</p></li>
-  </ol>
-</section>
+  <footer class="site-footer" id="site-footer">
+    <a class="wordmark" href="#inicio">HILANA SANTOS<span class="wordmark__dot">.</span></a>
+    <span>DESIGN — COMUNICAÇÃO — CRIATIVIDADE</span>
+    <a href="#inicio" class="back-to-top">VOLTAR AO TOPO ↑</a>
+    <small>© <span id="current-year">2026</span> · FEITO COM INTENÇÃO</small>
+  </footer>
 
-<section id="politica" class="bloco bordo reveal">
-  <h2>Para onde estou indo</h2>
-  <p>Quero construir uma carreira que una <strong>comunicação + tecnologia + estratégia + política</strong>.</p>
-  <p>É uma área que pretendo desenvolver no futuro. Hoje estou aprendendo e ganhando experiência para chegar lá.</p>
-  <ul class="tags claras">
-    <li>Comunicação Política</li><li>Comunicação Pública</li><li>Comunicação Institucional</li>
-    <li>Social Media</li><li>Produção de conteúdo</li><li>Estratégia de comunicação</li>
-  </ul>
-</section>
-
-<section id="contato" class="bloco reveal">
-  <h2>Contato</h2>
-  <p class="nome-contato">Hilana Santos</p>
-  <ul class="contatos">
-    <li>📍 Sítio Cercado — Curitiba, Paraná</li>
-    <li>📱 <a href="tel:+5547997655052">(47) 99765-5052</a></li>
-    <li>📧 <a href="mailto:hilanasantos207@gmail.com">hilanasantos207@gmail.com</a></li>
-    <li>Instagram: <a href="https://instagram.com/hilanasantos207" target="_blank" rel="noopener">@hilanasantos207</a></li>
-  </ul>
-</section>
-
-</main>
-
-<footer class="rodape">© <span id="ano"></span> Hilana Santos</footer>
-
-<script src="script.js"></script>
+  <div class="page-turn" id="page-turn" aria-hidden="true"><span>CREATIVE ARCHIVE</span><i></i></div>
+  <div class="page-number" id="page-number" aria-live="polite" aria-atomic="true"><span>01</span><i></i><span>05</span></div>
 </body>
 </html>
